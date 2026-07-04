@@ -27,7 +27,7 @@ with support for styling, legends, gradients, and layout
 customization.
 """
 
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 __author__ = "Maurice Lambert"
 __author_email__ = "mauricelambert434@gmail.com"
 __maintainer__ = "Maurice Lambert"
@@ -3110,6 +3110,10 @@ def _apply_background_decorations(
         for g in graphs:
             g.apply_color_steps([(float(min_v), float(max_v), color)])
 
+    if args.show_points:
+        for graph in graphs:
+            graph.show_points = True
+
 
 def _apply_foreground_decorations(
     chart: SVGChart, args: Namespace, graphs: List[Graph]
@@ -3124,10 +3128,6 @@ def _apply_foreground_decorations(
             chart.draw_pie_legend(graphs[0])
         else:
             chart.draw_legend(graphs)
-
-    if args.show_points:
-        for graph in graphs:
-            graph.show_points = True
 
 
 def _validate_args(args: Namespace, graphs: List[Graph]) -> None:
