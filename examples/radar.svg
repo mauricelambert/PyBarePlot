@@ -1,0 +1,29 @@
+<svg width="700" height="700" xmlns="http://www.w3.org/2000/svg">
+<rect width="700" height="700" fill="#121212"/>
+<line x1="350.0" y1="345.0" x2="350.0" y2="35.0" stroke="#444444" stroke-width="1" opacity="1" stroke-dasharray="4,4"/>
+<line x1="350.0" y1="345.0" x2="618.467875173176" y2="189.99999999999997" stroke="#444444" stroke-width="1" opacity="1" stroke-dasharray="4,4"/>
+<line x1="350.0" y1="345.0" x2="618.467875173176" y2="499.99999999999994" stroke="#444444" stroke-width="1" opacity="1" stroke-dasharray="4,4"/>
+<line x1="350.0" y1="345.0" x2="350.00000000000006" y2="655.0" stroke="#444444" stroke-width="1" opacity="1" stroke-dasharray="4,4"/>
+<line x1="350.0" y1="345.0" x2="81.53212482682409" y2="500.0000000000001" stroke="#444444" stroke-width="1" opacity="1" stroke-dasharray="4,4"/>
+<line x1="350.0" y1="345.0" x2="81.53212482682403" y2="189.99999999999997" stroke="#444444" stroke-width="1" opacity="1" stroke-dasharray="4,4"/>
+<polygon points="350.0,283.0 403.6935750346352,314.0 403.6935750346352,376.0 350.0,407.0 296.30642496536484,376.0 296.3064249653648,314.0" fill="None" stroke="#444444" stroke-width="1" stroke-dasharray="4,4"  opacity="1"/>
+<polygon points="350.0,221.0 457.3871500692704,283.0 457.38715006927043,407.0 350.0,469.0 242.61284993072962,407.00000000000006 242.61284993072962,283.0" fill="None" stroke="#444444" stroke-width="1" stroke-dasharray="4,4"  opacity="1"/>
+<polygon points="350.0,159.0 511.0807251039056,252.0 511.0807251039056,437.99999999999994 350.0,531.0 188.91927489609444,438.0000000000001 188.9192748960944,252.0" fill="None" stroke="#444444" stroke-width="1" stroke-dasharray="4,4"  opacity="1"/>
+<polygon points="350.0,97.0 564.7743001385408,220.99999999999997 564.7743001385409,468.99999999999994 350.00000000000006,593.0 135.22569986145925,469.0000000000001 135.22569986145922,220.99999999999997" fill="None" stroke="#444444" stroke-width="1" stroke-dasharray="4,4"  opacity="1"/>
+<polygon points="350.0,35.0 618.467875173176,189.99999999999997 618.467875173176,499.99999999999994 350.00000000000006,655.0 81.53212482682409,500.0000000000001 81.53212482682403,189.99999999999997" fill="None" stroke="#444444" stroke-width="1" stroke-dasharray="4,4"  opacity="1"/>
+<text fill="#e0e0e0" x="350.0" y="20.0" text-anchor="middle" font-size="12" opacity="1">MFA</text>
+<text fill="#e0e0e0" x="631.4582562299425" y="182.49999999999997" text-anchor="middle" font-size="12" opacity="1">Patch</text>
+<text fill="#e0e0e0" x="631.4582562299427" y="507.4999999999999" text-anchor="middle" font-size="12" opacity="1">Phish</text>
+<text fill="#e0e0e0" x="350.00000000000006" y="670.0" text-anchor="middle" font-size="12" opacity="1">Detect</text>
+<text fill="#e0e0e0" x="68.54174377005751" y="507.5000000000001" text-anchor="middle" font-size="12" opacity="1">Resp</text>
+<text fill="#e0e0e0" x="68.54174377005745" y="182.49999999999997" text-anchor="middle" font-size="12" opacity="1">Backup</text>
+<polygon points="350.0,35.0 588.6381112650453,207.2222222222222 558.8083473569147,465.5555555555555 350.00000000000006,620.5555555555555 81.53212482682409,500.0000000000001 81.53212482682403,189.99999999999997" fill="#36a2eb" stroke="#36a2eb" stroke-width="1" fill-opacity="0.2"  opacity="1"/>
+<polygon points="350.0,172.77777777777777 469.31905563252263,276.1111111111111 469.3190556325227,413.88888888888886 350.0,482.77777777777777 260.510708275608,396.6666666666667 200.8511804593467,258.88888888888886" fill="#ff9f40" stroke="#ff9f40" stroke-width="1" fill-opacity="0.2"  opacity="1"/>
+<polygon points="350.0,103.88888888888889 499.14881954065334,258.88888888888886 499.14881954065334,431.1111111111111 350.0,517.2222222222222 230.68094436747737,413.8888888888889 171.02141655121602,241.66666666666663" fill="#9966ff" stroke="#9966ff" stroke-width="1" fill-opacity="0.2"  opacity="1"/>
+<rect x="570" y="20" width="15" height="15" fill="#36a2eb" opacity="1"/>
+<text fill="#e0e0e0" x="590" y="32" text-anchor="start" font-size="12" opacity="1">Big Enterprises</text>
+<rect x="570" y="40" width="15" height="15" fill="#ff9f40" opacity="1"/>
+<text fill="#e0e0e0" x="590" y="52" text-anchor="start" font-size="12" opacity="1">SME</text>
+<rect x="570" y="60" width="15" height="15" fill="#9966ff" opacity="1"/>
+<text fill="#e0e0e0" x="590" y="72" text-anchor="start" font-size="12" opacity="1">Public Sector</text>
+</svg>
