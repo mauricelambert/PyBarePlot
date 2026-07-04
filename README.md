@@ -182,9 +182,9 @@ chart.plot_radar([big, sme, public], fill_opacity=0.2)
 chart.draw_legend([big, sme, public])
 chart.save("examples/radar.svg")
 
-phishing = Graph([DataPoint(v, name=n) for v, n in zip([36, 30, 16, 16], ["2023","2024","2025","2026"])], name="Phishing", default_color="#ff6384")
-creds = Graph([DataPoint(v, name=n) for v, n in zip([25, 22, 13, 13], ["2023","2024","2025","2026"])], name="Credentials", default_color="#36a2eb")
-vuln = Graph([DataPoint(v, name=n) for v, n in zip([16, 20, 20, 31], ["2023","2024","2025","2026"])], name="Vulns", default_color="#ff9f40")
+phishing = Graph([DataPoint(v, name=n) for v, n in zip([36, 30, 16, 16], [2023, 2024, 2025, 2026])], name="Phishing", default_color="#ff6384")
+creds = Graph([DataPoint(v, name=n) for v, n in zip([25, 22, 13, 13], [2023, 2024, 2025, 2026])], name="Credentials", default_color="#36a2eb")
+vuln = Graph([DataPoint(v, name=n) for v, n in zip([16, 20, 20, 31], [2023, 2024, 2025, 2026])], name="Vulns", default_color="#ff9f40")
 chart = SVGChart(900, 450, margin_top=20, margin_bottom=30, theme="dark")
 chart.plot_lines([phishing, creds, vuln])
 chart.draw_legend([phishing, creds, vuln])
@@ -209,23 +209,23 @@ chart.save("examples/horizontal-bars.svg")
 
 ### Pie chart
 
-![Pie chart](examples/pie.svg)
+![Pie chart](https://github.com/mauricelambert/PyBarePlot/blob/main/examples/pie.svg)
 
 ### Radar chart
 
-![Radar chart](examples/radar.svg)
+![Radar chart](https://github.com/mauricelambert/PyBarePlot/blob/main/examples/radar.svg)
 
 ### Line chart
 
-![Lines chart](examples/lines.svg)
+![Lines chart](https://github.com/mauricelambert/PyBarePlot/blob/main/examples/lines.svg)
 
 ### Grouped bars
 
-![Grouped bars](examples/grouped-bars.svg)
+![Grouped bars](https://github.com/mauricelambert/PyBarePlot/blob/main/examples/grouped-bars.svg)
 
 ### Horizontal bars
 
-![Horizontal bars](examples/horizontal-bars.svg)
+![Horizontal bars](https://github.com/mauricelambert/PyBarePlot/blob/main/examples/horizontal-bars.svg)
 
 ## Links
 
