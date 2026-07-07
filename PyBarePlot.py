@@ -27,7 +27,7 @@ with support for styling, legends, gradients, and layout
 customization.
 """
 
-__version__ = "0.0.3"
+__version__ = "0.0.4"
 __author__ = "Maurice Lambert"
 __author_email__ = "mauricelambert434@gmail.com"
 __maintainer__ = "Maurice Lambert"
@@ -1372,7 +1372,7 @@ class SVGChart:
             xticks = 5
             if self.verify_graphs_names(graphs):
                 xticks = [x.name for x in graphs[0].data]
-            self.axes(xmin, xmax - 1, ymin, ymax, xticks)
+            self.axes(xmin, xmax - 1, ymin, ymax, xticks, bar=bar)
 
         return ymin, ymax, xmax
 
@@ -2232,7 +2232,7 @@ class SVGChart:
         ymin = min(b.minimum for b in boxes)
         ymax = max(b.maximum for b in boxes)
         n = len(boxes)
-        self.axes(xmin=0, xmax=n, ymin=ymin, ymax=ymax)
+        self.axes(xmin=0, xmax=n, ymin=ymin, ymax=ymax, bar=True)
 
         plot_width = self.width - self.margin_left - self.margin_right
         box_width = (plot_width / n) * 0.6
