@@ -27,7 +27,7 @@ with support for styling, legends, gradients, and layout
 customization.
 """
 
-__version__ = "0.0.2"
+__version__ = "0.0.3"
 __author__ = "Maurice Lambert"
 __author_email__ = "mauricelambert434@gmail.com"
 __maintainer__ = "Maurice Lambert"
@@ -723,6 +723,8 @@ class SVGChart:
 
         if isinstance(value, (datetime, date)):
             return value.strftime("%Y-%m-%d")
+        elif isinstance(value, str):
+            return value
         return str(round(value, 1))
 
     def compute_limits(
@@ -756,7 +758,7 @@ class SVGChart:
         xmin: Union[Number, date, datetime],
         xmax: Union[Number, date, datetime],
         xticks: Union[int, List[Union[Number, date, datetime]]],
-        bar: bool = True,
+        bar: bool = False,
     ) -> List[Tuple[float, str]]:
         """
         Compute X tick positions and labels.
@@ -1367,7 +1369,10 @@ class SVGChart:
             ymin = min(0, ymin)
 
         if draw_axes:
-            self.axes(xmin, xmax - 1, ymin, ymax)
+            xticks = 5
+            if self.verify_graphs_names(graphs):
+                xticks = [x.name for x in graphs[0].data]
+            self.axes(xmin, xmax - 1, ymin, ymax, xticks)
 
         return ymin, ymax, xmax
 
@@ -1398,7 +1403,10 @@ class SVGChart:
         if ymax is None:
             ymax = max(len(graph.data) for graph in graphs)
 
-        self.axes(xmin, xmax, ymin, ymax, yticks=ymax, bar=False, hbar=True)
+        yticks = ymax
+        if self.verify_graphs_names(graphs):
+            yticks = [x.name for x in graphs[0].data]
+        self.axes(xmin, xmax, ymin, ymax, yticks=yticks, bar=False, hbar=True)
 
         return xmin, xmax, ymax
 
@@ -2472,7 +2480,7 @@ class SVGChart:
         ymax: Number,
         xticks: Union[int, List[Union[int, date, datetime]]] = 5,
         yticks: int = 5,
-        bar: bool = True,
+        bar: bool = False,
         hbar: bool = False,
     ) -> None:
         """
@@ -3115,16 +3123,18 @@ def _apply_background_decorations(
             graph.show_points = True
 
 
-def _apply_foreground_decorations(
+def _apply_legend(
     chart: SVGChart, args: Namespace, graphs: List[Graph]
 ) -> None:
     """
-    Apply all visual decorations to the chart.
+    Apply legend to the chart.
     """
 
     if args.legend:
         plot_type = _PLOT_ALIASES.get(args.type.lower(), args.type.lower())
-        if plot_type in _PLOT_SINGLE_GRAPH or len(graphs) == 1:
+        default_colors = {x.default_color for x in graphs}
+        colors = {x.color for x in graphs[0].data}
+        if plot_type in _PLOT_SINGLE_GRAPH or (len(default_colors) == 1 and len(colors) > 1):
             chart.draw_pie_legend(graphs[0])
         else:
             chart.draw_legend(graphs)
@@ -3504,7 +3514,7 @@ def main() -> int:
 
     _apply_background_decorations(chart, args, graphs)
     _plot_chart(chart, args.type.lower(), graphs)
-    _apply_foreground_decorations(chart, args, graphs)
+    _apply_legend(chart, args, graphs)
 
     output_path = Path(args.output)
     chart.save(output_path)

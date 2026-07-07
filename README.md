@@ -83,7 +83,7 @@ PyBarePlot --type lines --values 36 30 16 16 --values 25 22 13 13 --values 16 20
 
 PyBarePlot --type grouped-bars --values 100 85 45 45 --values 100 90 55 55 --values 100 125 125 190 --labels 2023 2024 2025 2026 --graph-name Phishing --graph-name Credentials --graph-name Vulns --graph-color "#ff6384" --colors "#ff6384" "#ff6384" "#ff6384" "#ff6384" --graph-color "#36a2eb" --colors "#36a2eb" "#36a2eb" "#36a2eb" "#36a2eb" --graph-color "#ff9f40" --colors "#ff9f40" "#ff9f40" "#ff9f40" "#ff9f40" --theme dark --legend --width 900 --height 450 --margin-top 20 --margin-bottom 30 --margin-left 40 --margin-right 20 -o examples/grouped-bars.svg --open
 
-PyBarePlot --type horizontal-bars --values 9.77 6.08 5.56 5.45 5.29 5.20 5.08 3.48 3.40 2.90 --labels Health Finance Industry Tech Energy Pharma Services Retail Education Hospitality --graph-name "Cost (M$)" --graph-color "#36a2eb" --colors "#ff4d4d" "#ff7a45" "#ff9f40" "#ffb347" "#ffc857" "#ffd166" "#ffe082" "#8bd17c" "#66c2a5" "#4bc0c0" --theme dark --width 900 --height 550 --margin-top 20 --margin-bottom 30 --margin-left 120 --margin-right 20 -o examples/horizontal-bars.svg --open
+PyBarePlot --type horizontal-bars --values 9.77 6.08 5.56 5.45 5.29 5.20 5.08 3.48 3.40 2.90 --labels Health Finance Industry Tech Energy Pharma Services Retail Education Hospitality --graph-name "Cost (M$)" --graph-color "#36a2eb" --colors "#ff4d4d" "#ff7a45" "#ff9f40" "#ffb347" "#ffc857" "#ffd166" "#ffe082" "#8bd17c" "#66c2a5" "#4bc0c0" --theme dark --width 900 --height 550 --margin-top 20 --margin-bottom 30 --margin-left 120 --margin-right 20 -o examples/horizontal-bars.svg --open --legend
 ```
 
 Help:
@@ -209,23 +209,23 @@ chart.save("examples/horizontal-bars.svg")
 
 ### Pie chart
 
-![Pie chart](https://github.com/mauricelambert/PyBarePlot/blob/main/examples/pie.svg)
+![Pie chart](https://mauricelambert.github.io/info/python/code/PyBarePlot/examples/pie.svg)
 
 ### Radar chart
 
-![Radar chart](https://github.com/mauricelambert/PyBarePlot/blob/main/examples/radar.svg)
+![Radar chart](https://mauricelambert.github.io/info/python/code/PyBarePlot/examples/radar.svg)
 
 ### Line chart
 
-![Lines chart](https://github.com/mauricelambert/PyBarePlot/blob/main/examples/lines.svg)
+![Lines chart](https://mauricelambert.github.io/info/python/code/PyBarePlot/examples/lines.svg)
 
 ### Grouped bars
 
-![Grouped bars](https://github.com/mauricelambert/PyBarePlot/blob/main/examples/grouped-bars.svg)
+![Grouped bars](https://mauricelambert.github.io/info/python/code/PyBarePlot/examples/grouped-bars.svg)
 
 ### Horizontal bars
 
-![Horizontal bars](https://github.com/mauricelambert/PyBarePlot/blob/main/examples/horizontal-bars.svg)
+![Horizontal bars](https://mauricelambert.github.io/info/python/code/PyBarePlot/examples/horizontal-bars.svg)
 
 ## Links
 
